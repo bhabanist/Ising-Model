@@ -37,7 +37,7 @@ contains
         ! Remaining time calculation (milliseconds)
         estimate = (1d0 - rate) * (dt / dr)
 
-        ! min/sec表記に変換
+        ! min/sec
         remain(1) = int(estimate/6d4) ! minutes
         remain(2) = int((estimate-remain(1)*6d4)*1d-3) ! seconds
 
